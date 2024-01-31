@@ -1,0 +1,24 @@
+.rightBar{
+    position: sticky;
+    top: 100px;
+}
+
+.rightBarImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rightBarImageHr{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .rightBarImage{
+        display: none;
+    }
+    .rightBarImageHr{
+        display: block;
+    }
+}
