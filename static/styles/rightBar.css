@@ -1,6 +1,7 @@
 .rightBar{
     position: sticky;
     top: 100px;
+    z-index: 1;
 }
 
 .rightBarImage{
@@ -12,9 +13,10 @@
 
 .rightBarImageHr{
     display: none;
+    width: 100%;
 }
 
-@media(max-width: 768px){
+@media(max-width: 1024px){
     .rightBarImage{
         display: none;
     }

@@ -82,3 +82,10 @@
 .singleRightBar{
     flex: 1;
 }
+
+@media(max-width: 1024px){
+    .singleBottom{
+        flex-direction: column-reverse;
+    }
+    .singleHeadImg{display: none;}
+}

@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     background-color: var(--bg);
+    z-index: 99;
 }
 
 .logo {
@@ -19,6 +20,32 @@
     gap: 20px;
     font-size: 20px;
 }
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--bgSoft);
+    border: 0.5px solid var(--textSoft);
+    padding: 5px;
+    position: relative;
+}
+
+.ball{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: var(--textSoft);
+    border: 1px solid var(--bgSoft);
+    transition: 300ms ease-in-out all;
+}
+
 
 @media (max-width: 768px) {
     .links {

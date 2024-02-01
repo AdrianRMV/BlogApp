@@ -42,3 +42,9 @@
     background-color: var(--bgSoft);
     color: var(--textSoft);
 }
+
+@media(max-width: 768px){
+    .listItemImage{
+        display: none;
+    }
+}
