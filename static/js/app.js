@@ -1,10 +1,12 @@
 const mode = localStorage.getItem("mode") || "";
-const toggle = document.querySelector(".toggle");
+const toggleContainer = document.querySelector(".toggle-container");
 const body = document.querySelector("body");
 
 document.body.className = mode;
 
-toggle.addEventListener("click", ()=> {
+toggleContainer.addEventListener("click", () => {
     localStorage.setItem("mode", mode === "light" ? "" : "night");
     body.classList.toggle("light");
-})
+    
+    toggleContainer.style.marginLeft = mode === "light" ? "20px" : "0";
+});

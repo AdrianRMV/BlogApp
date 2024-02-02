@@ -1,8 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ARV Blog'
+
+paginate = 4
 
 [params]
+    description = "The fastest blog"
     dateFormat = "Jan 2, 2006"
 
 [taxonomies]
