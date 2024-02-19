@@ -1,13 +1,14 @@
 {{ define "main" }}
-
+<link rel="stylesheet" href="/styles/list.css">
 {{ if eq .RelPermalink "/categories/" }}
-{{ range $.Site.Taxonomies.categories.ByCount }}
-    <a href="/categories/{{ .Name }}">
-        # {{ .Name }} <small>({{ .Count }})</small>
-    </a>
-{{ end }}
+<div class="categories-container">
+    {{ range $.Site.Taxonomies.categories.ByCount }}
+        <a href="/categories/{{ .Name }}">
+            # {{ .Name }} <small>({{ .Count }})</small>
+        </a>
+    {{ end }}
+</div>
 {{ else }}
-    <link rel="stylesheet" href="/styles/list.css">
     <div class="list">
         {{ range .Paginator.Pages}}
         <div class="listItem">
